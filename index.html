@@ -733,6 +733,19 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
+      document.addEventListener('DOMContentLoaded', function () {
+    // Get the back-to-top link element
+    var backToTopBtn = document.querySelector('.back-to-top');
+
+    // Add a click event listener to the link
+    backToTopBtn.addEventListener('click', function () {
+      // Scroll to the top of the page smoothly
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
 
